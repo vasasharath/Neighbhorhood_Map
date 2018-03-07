@@ -49,7 +49,7 @@ var Location = function(location) {
             return self.content();
         }
 
-        var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + self.name() + '&format=json&callback=wikiCallback';
+        var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + self.name() + '&format=json&callback=wikiCallback';
 
         jQuery.ajax({
             url: wikiUrl,
